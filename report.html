@@ -189,9 +189,9 @@ function showOutput(id, name) {
 
 <div class='heading'>
 <h1>Automation Testing Report</h1>
-<p class='attribute'><strong>Start Time:</strong> 2018-07-18 22:00:51</p>
-<p class='attribute'><strong>Duration:</strong> 0:04:33.513410</p>
-<p class='attribute'><strong>Status:</strong> Pass 2 Error 5</p>
+<p class='attribute'><strong>Start Time:</strong> 2018-07-19 15:46:27</p>
+<p class='attribute'><strong>Duration:</strong> 0:02:59.583321</p>
+<p class='attribute'><strong>Status:</strong> Pass 6 Error 1</p>
 
 <p class='description'><b></b></p>
 </div>
@@ -221,40 +221,39 @@ function showOutput(id, name) {
     <td>View</td>
 </tr>
 
-<tr class='errorClass'>
+<tr class='passClass'>
     <td>Test1_Login: Class to run tests against the AutomationpracticeTest Login</td>
     <td>3</td>
-    <td>0</td>
-    <td>0</td>
     <td>3</td>
+    <td>0</td>
+    <td>0</td>
     <td><a href="javascript:showClassDetail('c1',3)">Detail</a></td>
 </tr>
 
-<tr id='ft1.1' class='none'>
-    <td class='errorCase'><div class='testcase'>test_Login_001: AutomationpracticeTest Login - Valid data</div></td>
+<tr id='pt1.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_Login_001: AutomationpracticeTest Login - Valid data</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.1')" >
-        error</a>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.1')" >
+        pass</a>
 
-    <div id='div_ft1.1' class="popup_window">
+    <div id='div_pt1.1' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.1').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.1').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-ft1.1: Click on Sign in
-Traceback (most recent call last):
-  File "automationpractice.py", line 34, in test_Login_001
-    driver, logging, status = Login(self.driver, EMAIL, PASSWORD)
-  File "/Users/wonderlabs/damar/Automation/Web/automationpractice-AJobthing/testscripts/login/login.py", line 19, in Login
-    email = WebDriverWait(driver, 5).until(EC.presence_of_element_located((By.ID,"email")))
-  File "/Users/wonderlabs/damar/Automation/Web/automationpractice-AJobthing/.env/lib/python2.7/site-packages/selenium/webdriver/support/wait.py", line 80, in until
-    raise TimeoutException(message, screen, stacktrace)
-TimeoutException: Message: 
-
+pt1.1: Click on Sign in
+Fill email field : damar@mailinator.com
+Fill password field : 123qwe
+Click on Sign in
+Damar test
+Sign out ditemukan
+Click on Sign out
+Verify menu Sign in
+__main__.Test1_Login.test_Login_001: 26.767
 
 
         </pre>
@@ -264,30 +263,28 @@ TimeoutException: Message:
     </td>
 </tr>
 
-<tr id='ft1.2' class='none'>
-    <td class='errorCase'><div class='testcase'>test_Login_002: AutomationpracticeTest Login - Invalid password</div></td>
+<tr id='pt1.2' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_Login_002: AutomationpracticeTest Login - Invalid password</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.2')" >
-        error</a>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.2')" >
+        pass</a>
 
-    <div id='div_ft1.2' class="popup_window">
+    <div id='div_pt1.2' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.2').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.2').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-ft1.2: Traceback (most recent call last):
-  File "automationpractice.py", line 47, in test_Login_002
-    driver, logging, status = Login(self.driver, EMAIL, "123")
-  File "/Users/wonderlabs/damar/Automation/Web/automationpractice-AJobthing/testscripts/login/login.py", line 14, in Login
-    user_info = WebDriverWait(driver, 5).until(EC.presence_of_element_located((By.XPATH, '//div[@class="header_user_info"]')))
-  File "/Users/wonderlabs/damar/Automation/Web/automationpractice-AJobthing/.env/lib/python2.7/site-packages/selenium/webdriver/support/wait.py", line 80, in until
-    raise TimeoutException(message, screen, stacktrace)
-TimeoutException: Message: 
-
+pt1.2: Click on Sign in
+Fill email field : damar@mailinator.com
+Fill password field : 123
+Click on Sign in
+There is 1 error
+Invalid password.
+__main__.Test1_Login.test_Login_002: 6.181
 
 
         </pre>
@@ -297,30 +294,28 @@ TimeoutException: Message:
     </td>
 </tr>
 
-<tr id='ft1.3' class='none'>
-    <td class='errorCase'><div class='testcase'>test_Login_003: AutomationpracticeTest Login - Invalid email</div></td>
+<tr id='pt1.3' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_Login_003: AutomationpracticeTest Login - Invalid email</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.3')" >
-        error</a>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.3')" >
+        pass</a>
 
-    <div id='div_ft1.3' class="popup_window">
+    <div id='div_pt1.3' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.3').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.3').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-ft1.3: Traceback (most recent call last):
-  File "automationpractice.py", line 56, in test_Login_003
-    driver, logging, status = Login(self.driver, "xxx@mailinator.com", PASSWORD)
-  File "/Users/wonderlabs/damar/Automation/Web/automationpractice-AJobthing/testscripts/login/login.py", line 14, in Login
-    user_info = WebDriverWait(driver, 5).until(EC.presence_of_element_located((By.XPATH, '//div[@class="header_user_info"]')))
-  File "/Users/wonderlabs/damar/Automation/Web/automationpractice-AJobthing/.env/lib/python2.7/site-packages/selenium/webdriver/support/wait.py", line 80, in until
-    raise TimeoutException(message, screen, stacktrace)
-TimeoutException: Message: 
-
+pt1.3: Click on Sign in
+Fill email field : xxx@mailinator.com
+Fill password field : 123qwe
+Click on Sign in
+There is 1 error
+Authentication failed.
+__main__.Test1_Login.test_Login_003: 7.033
 
 
         </pre>
@@ -359,7 +354,7 @@ Click on Forgot your password?
 Fill email field damar@mailinator.com
 Click on button Retrieve Password
 A confirmation email has been sent to your address: damar@mailinator.com
-__main__.Test2_Forgotpassword.test_Forgot_001: 45.644
+__main__.Test2_Forgotpassword.test_Forgot_001: 14.820
 
 
         </pre>
@@ -390,7 +385,7 @@ Fill email field xxx@mailinator.com
 Click on button Retrieve Password
 There is 1 error
 There is no account registered for this email address.
-__main__.Test2_Forgotpassword.test_Forgot_002: 19.852
+__main__.Test2_Forgotpassword.test_Forgot_002: 11.356
 
 
         </pre>
@@ -400,40 +395,35 @@ __main__.Test2_Forgotpassword.test_Forgot_002: 19.852
     </td>
 </tr>
 
-<tr class='errorClass'>
+<tr class='passClass'>
     <td>Test3_Createanaccount: Class to run tests against the AutomationpracticeTest Create An Account</td>
     <td>1</td>
-    <td>0</td>
-    <td>0</td>
     <td>1</td>
+    <td>0</td>
+    <td>0</td>
     <td><a href="javascript:showClassDetail('c3',1)">Detail</a></td>
 </tr>
 
-<tr id='ft3.1' class='none'>
-    <td class='errorCase'><div class='testcase'>test_CreateAnAccount_002: AutomationpracticeTest Create an account - Invalid email</div></td>
+<tr id='pt3.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_CreateAnAccount_002: AutomationpracticeTest Create an account - Invalid email</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft3.1')" >
-        error</a>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt3.1')" >
+        pass</a>
 
-    <div id='div_ft3.1' class="popup_window">
+    <div id='div_pt3.1' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft3.1').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt3.1').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-ft3.1: Click on Sign in
-Traceback (most recent call last):
-  File "automationpractice.py", line 116, in test_CreateAnAccount_002
-    driver, logging, status = CreateAccount(self.driver, EMAIL)
-  File "/Users/wonderlabs/damar/Automation/Web/automationpractice-AJobthing/testscripts/createaccount/createaccount.py", line 19, in CreateAccount
-    email = WebDriverWait(driver, 5).until(EC.presence_of_element_located((By.ID,"email_create")))
-  File "/Users/wonderlabs/damar/Automation/Web/automationpractice-AJobthing/.env/lib/python2.7/site-packages/selenium/webdriver/support/wait.py", line 80, in until
-    raise TimeoutException(message, screen, stacktrace)
-TimeoutException: Message: 
-
+pt3.1: Click on Sign in
+Fill email field damar@mailinator.com
+Click on Create an account
+An account using this email address has already been registered. Please enter a valid password or request a new one.
+__main__.Test3_Createanaccount.test_CreateAnAccount_002: 18.004
 
 
         </pre>
@@ -469,11 +459,32 @@ TimeoutException: Message:
         
 ft4.1: Fill keyword on search field dress
 Click on button 
+SEARCH  "DRESS"
+7 results have been found.
+Ditemukan data 7
+Click more view
+Detail Product
+Description : Printed chiffon knee length dress with tank straps. Deep v-neckline.
+Click on Add to cart
+Product successfully added to your shopping cart
+Click on Proceed to checkout
+SHOPPING-CART SUMMARY
+Your shopping cart contains: 1 Product
+Click on Proceed to checkout
+AUTHENTICATION
+Fill email field : damar@mailinator.com
+Fill password field : 123qwe
+Click on Sign in
+ADDRESSES
+Fill comment field : Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Click on Proceed to checkout
 Traceback (most recent call last):
-  File "automationpractice.py", line 137, in test_Cart_001
-    driver, logging, status = Search(self.driver, "dress")
-  File "/Users/wonderlabs/damar/Automation/Web/automationpractice-AJobthing/testscripts/search/search.py", line 22, in Search
-    heading = WebDriverWait(driver, 5).until(EC.presence_of_element_located((By.XPATH, '//h1[@class="page-heading  product-listing"]')))
+  File "automationpractice.py", line 139, in test_Cart_001
+    driver, logging, status = AddToCart(self.driver)
+  File "/Users/wonderlabs/damar/Automation/Web/automationpractice-AJobthing/testscripts/cart/cart.py", line 220, in AddToCart
+    driver, logging, status = Shipping(driver)
+  File "/Users/wonderlabs/damar/Automation/Web/automationpractice-AJobthing/testscripts/cart/cart.py", line 126, in Shipping
+    order_detail = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, 'center_column')))
   File "/Users/wonderlabs/damar/Automation/Web/automationpractice-AJobthing/.env/lib/python2.7/site-packages/selenium/webdriver/support/wait.py", line 80, in until
     raise TimeoutException(message, screen, stacktrace)
 TimeoutException: Message: 
@@ -490,9 +501,9 @@ TimeoutException: Message:
 <tr id='total_row'>
     <td>Total</td>
     <td>7</td>
-    <td>2</td>
+    <td>6</td>
     <td>0</td>
-    <td>5</td>
+    <td>1</td>
     <td>&nbsp;</td>
 </tr>
 </table>

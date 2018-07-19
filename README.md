@@ -1,12 +1,13 @@
 ### Automation Test SaleStock app
 
-### Requrements
+### Requirements
 - EasyProcess==0.2.3
 - PyVirtualDisplay==0.2.1
 - selenium==3.9.0
+- Python 2.7.10
 
 ### OS
-- macOS High Sierra 10.13.3
+- macOS High Sierra 10.13.4
 - Ubuntu Server 16.04.3 64
 
 #### Note :
