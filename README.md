@@ -1,4 +1,4 @@
-### Automation Test SaleStock app
+### Automation Test Automationpractice app
 
 ### Requirements
 - EasyProcess==0.2.3
@@ -34,9 +34,8 @@
 - EX$: python automationpractice.py damar@mailinator.com 123qwe http://automationpractice.com Chrome > report.html
 
 ### GIF
-![GIF Capture damar - SaleStock test](readme/gifimage.gif)
+![GIF Capture damar - automationpractice test](readme/gifimage.gif)
 
 ### Report HTML
-![Image Report damar - SaleStock test](readme/reportimage.png)
-![Image Report damar - SaleStock test](readme/reportimage2.png)
+![Image Report damar - automationpractice test](readme/report.png)
 - File report.html https://github.com/damarmustikoaji/automationpractice-AJobthing/blob/master/report.html
